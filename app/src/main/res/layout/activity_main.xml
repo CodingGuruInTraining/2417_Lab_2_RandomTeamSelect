@@ -12,10 +12,10 @@
         android:layout_height="38dp"
         tools:layout_editor_absoluteY="50dp"
         tools:layout_editor_absoluteX="171dp"
-        android:layout_below="@+id/resulttextview"
+        android:layout_alignBottom="@+id/team2name"
         android:layout_alignLeft="@+id/team2name"
         android:layout_alignStart="@+id/team2name"
-        android:layout_marginTop="15dp" />
+        android:layout_marginBottom="68dp" />
 
     <EditText
         android:id="@+id/team2name"
@@ -23,24 +23,33 @@
         android:layout_height="38dp"
         tools:layout_editor_absoluteX="171dp"
         tools:layout_editor_absoluteY="121dp"
-        android:layout_marginTop="61dp"
-        android:layout_below="@+id/team1name"
-        android:layout_alignLeft="@+id/selectrandombutton"
-        android:layout_alignStart="@+id/selectrandombutton" />
+        android:layout_above="@+id/selectrandombutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="117dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team 1:"
         tools:layout_editor_absoluteY="68dp"
-        tools:layout_editor_absoluteX="103dp" />
+        tools:layout_editor_absoluteX="103dp"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/team1name"
+        android:layout_alignBottom="@+id/team1name"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team 2:"
         tools:layout_editor_absoluteY="132dp"
-        tools:layout_editor_absoluteX="103dp" />
+        tools:layout_editor_absoluteX="103dp"
+        android:layout_alignBaseline="@+id/team2name"
+        android:layout_alignBottom="@+id/team2name"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/selectrandombutton"
@@ -49,12 +58,9 @@
         android:text="Select Random Team"
         tools:layout_editor_absoluteY="231dp"
         tools:layout_editor_absoluteX="103dp"
+        android:layout_marginBottom="169dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="126dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/resulttextview"
@@ -62,6 +68,10 @@
         android:layout_height="wrap_content"
         android:text="Results shown here"
         tools:layout_editor_absoluteY="326dp"
-        tools:layout_editor_absoluteX="132dp" />
+        tools:layout_editor_absoluteX="132dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/team2name"
+        android:layout_toStartOf="@+id/team2name"
+        android:layout_marginBottom="86dp" />
 
 </RelativeLayout>

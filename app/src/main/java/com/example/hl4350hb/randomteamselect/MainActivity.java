@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 String team1Value = mTeam1Text.getText().toString();
                 String team2Value = mTeam2Text.getText().toString();
 
-                if (team1Value == null || team2Value == null) {
+                if (team1Value == null || team2Value == null || team1Value == "" || team2Value == "") {
                     Toast.makeText(MainActivity.this, "You need two teams entered!", Toast.LENGTH_LONG).show();
                 }
                 else {

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RandomTeamSelect.iml" filepath="$PROJECT_DIR$/RandomTeamSelect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2417_Lab_2_RandomTeamSelect.iml" filepath="$PROJECT_DIR$/2417_Lab_2_RandomTeamSelect.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

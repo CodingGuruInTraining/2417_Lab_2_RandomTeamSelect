@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hl4350hb.randomteamselect.MainActivity">
+
+    <EditText
+        android:id="@+id/team1name"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:layout_editor_absoluteX="171dp"
+        android:layout_marginBottom="52dp"
+        android:layout_above="@+id/selectrandombutton"
+        android:layout_toLeftOf="@+id/resulttextview"
+        android:layout_toStartOf="@+id/resulttextview"
+        android:layout_marginRight="80dp"
+        android:layout_marginEnd="80dp"/>
+
+    <EditText
+        android:id="@+id/team2name"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="250dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="118dp"
+        android:layout_marginEnd="118dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 1:"
+        tools:layout_editor_absoluteY="68dp"
+        tools:layout_editor_absoluteX="103dp"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toLeftOf="@+id/resulttextview"
+        android:layout_toStartOf="@+id/resulttextview"
+        android:layout_marginRight="114dp"
+        android:layout_marginEnd="114dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 2:"
+        tools:layout_editor_absoluteY="132dp"
+        tools:layout_editor_absoluteX="103dp"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/team1name"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@+id/resulttextview"
+        android:layout_alignStart="@+id/resulttextview"/>
+
+    <Button
+        android:id="@+id/selectrandombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Random Team"
+        tools:layout_editor_absoluteY="231dp"
+        tools:layout_editor_absoluteX="103dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_alignBaseline="@+id/resulttextview"
+        android:layout_alignBottom="@+id/resulttextview"
+        android:layout_toLeftOf="@+id/resulttextview"
+        android:layout_toStartOf="@+id/resulttextview"/>
+
+    <TextView
+        android:id="@+id/resulttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results shown here"
+        tools:layout_editor_absoluteY="326dp"
+        tools:layout_editor_absoluteX="132dp"
+        android:layout_marginBottom="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/team2name"
+        android:layout_alignStart="@+id/team2name"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"/>
+
+</RelativeLayout>
